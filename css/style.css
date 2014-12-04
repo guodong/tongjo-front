@@ -3,3 +3,9 @@
 	padding: 10px 30px;
 	color: white;
 }
+.transparent_class {
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}

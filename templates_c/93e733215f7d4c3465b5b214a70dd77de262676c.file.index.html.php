@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-04 19:13:06
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-04 20:49:56
          compiled from "templates/index.html" */ ?>
 <?php /*%%SmartyHeaderCode:1355987762548041c22897f5-78826079%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '93e733215f7d4c3465b5b214a70dd77de262676c' => 
     array (
       0 => 'templates/index.html',
-      1 => 1417691513,
+      1 => 1417697392,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
   'unifunc' => 'content_548041c22ba8a3_31484454',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_548041c22ba8a3_31484454')) {function content_548041c22ba8a3_31484454($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -34,7 +34,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/css/site.css" />
-
+<?php echo '<script'; ?>
+ src="/js/jquery.js"><?php echo '</script'; ?>
+>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 </head>
@@ -60,12 +62,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						id="signupSubmit">发 布</a> <a href="" class="big-button home btn"
 						id="signupSubmit">参 加</a>
 				</form>
-				<p>No long-time commitment. Pay as you go.</p>
+				<p></p>
 			</section>
 
-			<img
-				src="/img/zhuyepicture.png"
-				alt="" />
+			<!-- <img src="/img/zhuyepicture1.png" alt="" /> -->
 		</div>
 		<section class="short-list-features">
 			<ul class="clear">
@@ -114,120 +114,65 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 	<section class="tech">
 		<div class="clear">
-			<h2 class="title">Powered By Innovative Technology</h2>
-
+			<h2 class="title">典型项目</h2>
 			<article>
-				<span> <svg xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-						id="Layer_1" x="0px" y="0px" width="121.987px" height="138.978px"
-						viewBox="0 0 121.987 138.978"
-						enable-background="new 0 0 121.987 138.978" xml:space="preserve">
-						<path fill-rule="evenodd" clip-rule="evenodd" fill="#ff0000"
-							d="M64.856 137.873c-2.446 1.473-5.28 1.473-7.726 0l-26.256-15.814c-0.078-0.047-0.145-0.086-0.225-0.131L3.864 107.036c-2.496-1.388-3.913-3.848-3.863-6.709l0.53-30.707c0.002-0.092 0.002-0.169 0-0.261l-0.53-30.708c-0.05-2.861 1.367-5.321 3.863-6.709L30.65 17.05c0.08-0.044 0.147-0.083 0.225-0.13L57.131 1.105c2.446-1.474 5.28-1.474 7.726 0l26.256 15.814c0.078 0.047 0.145 0.086 0.225 0.13l26.786 14.893c2.496 1.388 3.912 3.848 3.863 6.709l-0.53 30.708c-0.001 0.092-0.001 0.169 0 0.261l0.53 30.707c0.049 2.861-1.367 5.322-3.863 6.709l-26.786 14.893c-0.08 0.045-0.146 0.084-0.225 0.131L64.856 137.873z" /></svg>
-					<svg xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-						id="Layer_1" x="0px" y="0px" width="78px" height="59px"
-						viewBox="0 0 78 59" enable-background="new 0 0 78 59"
-						xml:space="preserve">
-						<g>
-						<path fill="#FFFFFF" d="M78 59V0H0v59H78zM12 48V11h54v37H12z" />
-						<path fill="#FFFFFF"
-							d="M25.746 41.181c0 1.56-1.275 2.835-2.834 2.835h-0.843c-1.559 0-2.834-1.275-2.834-2.835V17.829c0-1.559 1.275-2.834 2.834-2.834h0.843c1.559 0 2.834 1.275 2.834 2.834V41.181z" />
-						<path fill="#FFFFFF"
-							d="M36.908 41.181c0 1.56-1.275 2.835-2.834 2.835h-0.843c-1.559 0-2.834-1.275-2.834-2.835V17.829c0-1.559 1.275-2.834 2.834-2.834h0.843c1.559 0 2.834 1.275 2.834 2.834V41.181z" />
-						<path fill="#FFFFFF"
-							d="M48.069 41.181c0 1.56-1.275 2.835-2.835 2.835h-0.841c-1.56 0-2.835-1.275-2.835-2.835V17.829c0-1.559 1.275-2.834 2.835-2.834h0.841c1.56 0 2.835 1.275 2.835 2.834V41.181z" />
-						<path fill="#FFFFFF"
-							d="M59.231 41.181c0 1.56-1.275 2.835-2.835 2.835h-0.842c-1.56 0-2.835-1.275-2.835-2.835V17.829c0-1.559 1.275-2.834 2.835-2.834h0.842c1.56 0 2.835 1.275 2.835 2.834V41.181z" /></g></svg>
+				<span>
+				<img src="/img/web.png">
+					<div class="transparent_class">
+						<p>已报名团队：2</p>
+						<p>个人报名：3</p>
+						<a class="small-button red" href="#">我要参加</a>
+					</div>
 				</span>
-				<p>Host On</p>
-				<h3>Optimized Containers</h3>
-				<p>
-					Virtual containers are the most efficient</br>virtualization method
-					nowadays. <br />We even perfected that.
-				</p>
-				<ul>
-					<li><svg xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-							id="Layer_1" x="0px" y="0px" width="1536px" height="1536px"
-							viewBox="384 384 1536 1536"
-							enable-background="new 384 384 1536 1536" xml:space="preserve">
-							<path fill="#FFFFFF"
-								d="M1069 1555l614-614c12.666-12.666 19-27.666 19-45 0-17.333-6.334-32.333-19-45l-102-102c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-467 467 -211-211c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-102 102c-12.667 12.667-19 27.667-19 45 0 17.334 6.333 32.334 19 45l358 358c12.666 12.667 27.666 19 45 19C1041.333 1574 1056.333 1567.667 1069 1555zM1920 672v960c0 79.334-28.167 147.167-84.5 203.5 -56.334 56.334-124.167 84.5-203.5 84.5H672c-79.334 0-147.167-28.166-203.5-84.5 -56.334-56.333-84.5-124.166-84.5-203.5V672c0-79.333 28.166-147.166 84.5-203.5C524.833 412.167 592.666 384 672 384h960c79.333 0 147.166 28.167 203.5 84.5C1891.833 524.834 1920 592.667 1920 672z" /></svg>
-						No Server Overhead</li>
-					<li><svg xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-							id="Layer_1" x="0px" y="0px" width="1536px" height="1536px"
-							viewBox="384 384 1536 1536"
-							enable-background="new 384 384 1536 1536" xml:space="preserve">
-							<path fill="#FFFFFF"
-								d="M1069 1555l614-614c12.666-12.666 19-27.666 19-45 0-17.333-6.334-32.333-19-45l-102-102c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-467 467 -211-211c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-102 102c-12.667 12.667-19 27.667-19 45 0 17.334 6.333 32.334 19 45l358 358c12.666 12.667 27.666 19 45 19C1041.333 1574 1056.333 1567.667 1069 1555zM1920 672v960c0 79.334-28.167 147.167-84.5 203.5 -56.334 56.334-124.167 84.5-203.5 84.5H672c-79.334 0-147.167-28.166-203.5-84.5 -56.334-56.333-84.5-124.166-84.5-203.5V672c0-79.333 28.166-147.166 84.5-203.5C524.833 412.167 592.666 384 672 384h960c79.333 0 147.166 28.167 203.5 84.5C1891.833 524.834 1920 592.667 1920 672z" /></svg>
-						Unmatched Elasticity</li>
-					<li><svg xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-							id="Layer_1" x="0px" y="0px" width="1536px" height="1536px"
-							viewBox="384 384 1536 1536"
-							enable-background="new 384 384 1536 1536" xml:space="preserve">
-							<path fill="#FFFFFF"
-								d="M1069 1555l614-614c12.666-12.666 19-27.666 19-45 0-17.333-6.334-32.333-19-45l-102-102c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-467 467 -211-211c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-102 102c-12.667 12.667-19 27.667-19 45 0 17.334 6.333 32.334 19 45l358 358c12.666 12.667 27.666 19 45 19C1041.333 1574 1056.333 1567.667 1069 1555zM1920 672v960c0 79.334-28.167 147.167-84.5 203.5 -56.334 56.334-124.167 84.5-203.5 84.5H672c-79.334 0-147.167-28.166-203.5-84.5 -56.334-56.333-84.5-124.166-84.5-203.5V672c0-79.333 28.166-147.166 84.5-203.5C524.833 412.167 592.666 384 672 384h960c79.333 0 147.166 28.167 203.5 84.5C1891.833 524.834 1920 592.667 1920 672z" /></svg>
-						Complete Isolation</li>
-				</ul>
-				<a href="/technology" class="big-button dark-grey ">Learn More</a>
+				<h3>网站开发</h3>
+			</article>
+			<article>
+				<span>
+				<img src="/img/cpt.png">
+					<div class="transparent_class">
+						<p>已报名团队：2</p>
+						<p>个人报名：3</p>
+						<a class="small-button red" href="#">我要参加</a>
+					</div>
+				</span>
+				<h3>比赛</h3>
+			</article>
+			<article>
+				<span>
+				<img src="/img/market.png">
+					<div class="transparent_class">
+						<p>已报名团队：2</p>
+						<p>个人报名：3</p>
+						<a class="small-button red" href="#">我要参加</a>
+					</div>
+				</span>
+				<h3>商业市场</h3>
+			</article>
+			<article>
+				<span>
+				<img src="/img/phone.png">
+					<div class="transparent_class">
+						<p>已报名团队：2</p>
+						<p>个人报名：3</p>
+						<a class="small-button red" href="#">我要参加</a>
+					</div>
+				</span>
+				<h3>移动设备</h3>
 			</article>
 
-			<article>
-				<span> <svg xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-						id="Layer_1" x="0px" y="0px" width="121.987px" height="138.978px"
-						viewBox="0 0 121.987 138.978"
-						enable-background="new 0 0 121.987 138.978" xml:space="preserve">
-						<path fill-rule="evenodd" clip-rule="evenodd" fill="#ff0000"
-							d="M64.856 137.873c-2.446 1.473-5.28 1.473-7.726 0l-26.256-15.814c-0.078-0.047-0.145-0.086-0.225-0.131L3.864 107.036c-2.496-1.388-3.913-3.848-3.863-6.709l0.53-30.707c0.002-0.092 0.002-0.169 0-0.261l-0.53-30.708c-0.05-2.861 1.367-5.321 3.863-6.709L30.65 17.05c0.08-0.044 0.147-0.083 0.225-0.13L57.131 1.105c2.446-1.474 5.28-1.474 7.726 0l26.256 15.814c0.078 0.047 0.145 0.086 0.225 0.13l26.786 14.893c2.496 1.388 3.912 3.848 3.863 6.709l-0.53 30.708c-0.001 0.092-0.001 0.169 0 0.261l0.53 30.707c0.049 2.861-1.367 5.322-3.863 6.709l-26.786 14.893c-0.08 0.045-0.146 0.084-0.225 0.131L64.856 137.873z" /></svg>
-					<svg xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-						id="Layer_1" x="0px" y="0px" width="152.779px" height="95.003px"
-						viewBox="0 0 152.779 95.003"
-						enable-background="new 0 0 152.779 95.003" xml:space="preserve">
-						<path fill="none" stroke="#FFFFFF" stroke-width="10"
-							stroke-linecap="round" stroke-miterlimit="10"
-							d="M133.938 90.003c16.937-10.474 13.568-30.959 13.568-30.959 -2.675-10.625-8.223-17.113-18.759-21.997l0.053-0.392C128.801 19.172 110.993 5 89.008 5c-14.769 0-27.514 6.472-34.37 15.979 -2.987-1.182-6.286-1.911-9.845-1.911 -12.211 0-22.107 7.874-22.107 17.587l0.051 0.392C12.202 41.931 5 50.925 5 61.277c0 15.477 2.436 25.193 19.526 28.726H133.938z" /></svg>
-				</span>
-				<p>Store On</p>
-				<h3>Distributed Storage</h3>
-				<p>Instead of depending on expensive and outdated hard drives, we
-					use the latest storage technologies - Distributed Storage.</p>
-				<ul>
-					<li><svg xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-							id="Layer_1" x="0px" y="0px" width="1536px" height="1536px"
-							viewBox="384 384 1536 1536"
-							enable-background="new 384 384 1536 1536" xml:space="preserve">
-							<path fill="#FFFFFF"
-								d="M1069 1555l614-614c12.666-12.666 19-27.666 19-45 0-17.333-6.334-32.333-19-45l-102-102c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-467 467 -211-211c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-102 102c-12.667 12.667-19 27.667-19 45 0 17.334 6.333 32.334 19 45l358 358c12.666 12.667 27.666 19 45 19C1041.333 1574 1056.333 1567.667 1069 1555zM1920 672v960c0 79.334-28.167 147.167-84.5 203.5 -56.334 56.334-124.167 84.5-203.5 84.5H672c-79.334 0-147.167-28.166-203.5-84.5 -56.334-56.333-84.5-124.166-84.5-203.5V672c0-79.333 28.166-147.166 84.5-203.5C524.833 412.167 592.666 384 672 384h960c79.333 0 147.166 28.167 203.5 84.5C1891.833 524.834 1920 592.667 1920 672z" /></svg>
-						Faster Than SSD</li>
-					<li><svg xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-							id="Layer_1" x="0px" y="0px" width="1536px" height="1536px"
-							viewBox="384 384 1536 1536"
-							enable-background="new 384 384 1536 1536" xml:space="preserve">
-							<path fill="#FFFFFF"
-								d="M1069 1555l614-614c12.666-12.666 19-27.666 19-45 0-17.333-6.334-32.333-19-45l-102-102c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-467 467 -211-211c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-102 102c-12.667 12.667-19 27.667-19 45 0 17.334 6.333 32.334 19 45l358 358c12.666 12.667 27.666 19 45 19C1041.333 1574 1056.333 1567.667 1069 1555zM1920 672v960c0 79.334-28.167 147.167-84.5 203.5 -56.334 56.334-124.167 84.5-203.5 84.5H672c-79.334 0-147.167-28.166-203.5-84.5 -56.334-56.333-84.5-124.166-84.5-203.5V672c0-79.333 28.166-147.166 84.5-203.5C524.833 412.167 592.666 384 672 384h960c79.333 0 147.166 28.167 203.5 84.5C1891.833 524.834 1920 592.667 1920 672z" /></svg>
-						Multi-Node Data Parallelism</li>
-					<li><svg xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-							id="Layer_1" x="0px" y="0px" width="1536px" height="1536px"
-							viewBox="384 384 1536 1536"
-							enable-background="new 384 384 1536 1536" xml:space="preserve">
-							<path fill="#FFFFFF"
-								d="M1069 1555l614-614c12.666-12.666 19-27.666 19-45 0-17.333-6.334-32.333-19-45l-102-102c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-467 467 -211-211c-12.667-12.666-27.667-19-45-19 -17.334 0-32.334 6.334-45 19l-102 102c-12.667 12.667-19 27.667-19 45 0 17.334 6.333 32.334 19 45l358 358c12.666 12.667 27.666 19 45 19C1041.333 1574 1056.333 1567.667 1069 1555zM1920 672v960c0 79.334-28.167 147.167-84.5 203.5 -56.334 56.334-124.167 84.5-203.5 84.5H672c-79.334 0-147.167-28.166-203.5-84.5 -56.334-56.333-84.5-124.166-84.5-203.5V672c0-79.333 28.166-147.166 84.5-203.5C524.833 412.167 592.666 384 672 384h960c79.333 0 147.166 28.167 203.5 84.5C1891.833 524.834 1920 592.667 1920 672z" /></svg>
-						Cost-Efficiency</li>
-				</ul>
-				<a href="/technology#storage" class="big-button dark-grey">Learn
-					More</a>
-			</article>
 		</div>
 	</section>
-
+<?php echo '<script'; ?>
+>
+$(function(){
+	$(".tech span").hover(function(){
+		$(this).find("div").fadeIn();
+	},function(){
+		$(this).find("div").fadeOut();
+	})
+})
+<?php echo '</script'; ?>
+>
 	<section class="flexibility">
 		<div class="clear">
 			<h2 class="title">Get More Flexibility for your App or Web Project</h2>
@@ -264,15 +209,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</article>
 		</div>
 	</section>
-	<section class="support">
-		<div>
-			<h2 class="title">Backed By 24/7 Live Support</h2>
-			<p>With our 24/7 Helpdesk there is always someone you can reach to
-				answer your questions or troubleshoot your issue.</p>
-		</div>
-	</section>
 
-	<section class="beta white">
+	<section class="beta">
 		<div>
 			<h2 class="title medium">Sign up now and get $20 free credit.</h2>
 			<a href="/signup" class="big-button grlue">Sign Up Free</a>
