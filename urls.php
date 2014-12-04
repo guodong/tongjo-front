@@ -1,0 +1,4 @@
+<?php
+$urls = array(
+        '#^/$#' => 'index',
+);
