@@ -1,19 +1,18 @@
 /**
- * 
+ * 注册模块
  */
 (function() {
-	var signupApp = angular.module('signupeeApp', []);
-	app.config(["validatorProvider", function (validatorProvider) {
-
+	"use strict";
+	var signupApp = angular.module('signupApp', ["w5c.validator"]);
+	signupApp.config(["w5cValidatorProvider", function (w5cValidatorProvider) {
         // 全局配置
-        validatorProvider.config({
+		w5cValidatorProvider.config({
             blurTrig: false,
             showError: true,
             removeError: true
 
         });
-
-        validatorProvider.setRules({
+		w5cValidatorProvider.setRules({
             email: {
                 required: "输入的邮箱地址不能为空",
                 email: "输入邮箱地址格式不正确"
@@ -32,26 +31,26 @@
                 required: "重复密码不能为空",
                 repeat: "两次密码输入不一致"
             },
-            number: {
-                required: "数字不能为空"
+            agree:{
+            	required:"您必须同意用户协议"
             }
         });
     }]);
-    app.controller("validationController", ["$scope", "$http", function ($scope, $http) {
-
+    signupApp.controller("signupController", ["$scope", "$http", function ($scope, $http) {
         var vm = $scope.vm = {
             htmlSource: "",
             showErrorType: 1
         };
 
         vm.saveEntity = function (form) {
-            //do somethings for bz
-            alert("Save Successfully!!!");
+        	// 表单验证完成后调用
+        	//TODO 提交数据
+        	alert("提交数据");
         };
 
         //每个表单的配置，如果不设置，默认和全局配置相同
         vm.validateOptions = {
-            blurTrig: true
+            blurTrig: false
         };
 
         vm.changeShowType = function () {
@@ -63,26 +62,6 @@
                 vm.validateOptions.removeError = true;
             }
         };
-
-        $http.get("index.js").success(function (result) {
-            vm.jsSource = result;
-        });
-        $http.get("validate.form.html").success(function (result) {
-            vm.htmlSource = result;
-        });
-        $http.get("validate.form.html").success(function (result) {
-            vm.htmlSource = result;
-        });
-
-        $http.get("css/style.less").success(function (result) {
-            vm.lessSource = result;
-        });
-       // 表单验证完成后调用
-		$scope.submitForm = function(isValid) {
-			if (isValid) {
-				alert('our form is amazing');
-			}
-		};
 
     }]);
 })();

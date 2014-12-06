@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-06 15:46:06
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-07 00:15:01
          compiled from "templates/signup.html" */ ?>
 <?php /*%%SmartyHeaderCode:171523391554829bcc10a837-19282366%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9ed991be824c362b16b427f56aa9924ea4656498' => 
     array (
       0 => 'templates/signup.html',
-      1 => 1417851962,
+      1 => 1417882498,
       2 => 'file',
     ),
   ),
@@ -36,12 +36,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  src="/js/angular.min.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
+ src="/js/validation.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
  src="/js/signup.js"><?php echo '</script'; ?>
 >
 </head>
 <body ng-app="signupApp" class="ng-scope">
 	<div>
-	<!-- 导航栏 -->
+		<!-- 导航栏 -->
 		<nav class="navbar header" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -56,52 +59,64 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 		</nav>
 		<!-- 主体 -->
-		<div ng-controller="validataionController" class="container-fluid">
+		<div ng-controller="signupController" class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
 					<div class="panel panel-default">
 						<div class="panel-heading">立即免费注册</div>
 						<div class="panel-body">
-							<form class="form-horizontal ng-pristine ng-valid" role="form" novalidate>
+							<form class="form-horizontal w5c-form"
+								role="form" w5c-form-validate="vm.validateOptions"
+								name="signupForm" novalidate>
 								<div class="form-group">
 									<label for="inputEmail" class="col-sm-3 control-label">邮箱</label>
 									<div class="col-sm-6">
-									<input type="email" id="email" class="form-control ng-pristine ng-valid ng-valid-email" placeholder="邮箱" autocapitalize="off" ng-model="signupForm.email">
-									<p ng-show="signupForm.email.$invalid && !signupForm.email.$pristine" class="help-block">邮箱无效
-									.</p>
+										<input type="email" id="email" name="email"
+											class="form-control"
+											placeholder="邮箱" ng-model="email" required>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputUsername" class="col-sm-3 control-label">用户名</label>
 									<div class="col-sm-6">
-									<input type="text" id="name" class="form-control ng-pristine ng-valid" placeholder="用户名" ng-model="signupForm.username" ng-minlength="3" ng-maxlength="128">
-									<p ng-show="signupForm.username.$error.minlength" class="help-block">用户名太短.</p>
-        <p ng-show="signupForm.username.$error.maxlength" class="help-block">用户名太长.</p>
+									<!-- w5c-unique-check="{url:''+username}" -->
+										<input type="text" id="name" name="username"
+											class="form-control"
+											placeholder="用户名" ng-model="username"
+											ng-pattern="/^[A-Za-z]{1}[0-9A-Za-z_]{1,19}$/"
+											 required>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputPassword" class="col-sm-3 control-label">密码</label>
 									<div class="col-sm-6">
-														<input type="password" class="form-control ng-pristine ng-valid" placeholder="密码" ng-model="signupForm.password">
+										<input type="password" name="password"
+											class="form-control"
+											placeholder="密码" ng-minlength="5" ng-maxlength="15"
+											ng-model="password" required>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputPassword" class="col-sm-3 control-label">重复密码</label>
 									<div class="col-sm-6">
-											<input type="password" class="form-control ng-pristine ng-valid" placeholder="重复密码" ng-model="signupForm.passwordConfirmation">
+										<input type="password" name="repeatpassword" w5c-repeat="password"
+											class="form-control"
+											placeholder="重复密码" ng-model="repeatpassword"
+											required>
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-3 col-sm-6">
 										<div class="checkbox">
-											<label> <input type="checkbox"> 我同意<a>用户协议</a>
+											<label> <input type="checkbox" name="agree" ng-model="agree" required> 我同意<a>用户协议</a>
 											</label>
 										</div>
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-3 col-sm-3">
-										<button type="submit" class="btn btn-default" ng-click="register()" ng-disabled="siggupForm.invalid">注册</button>
+										<button type="submit" class="btn btn-default"
+											w5c-form-submit="vm.saveEntity()">注册</button>
 									</div>
 								</div>
 							</form>
@@ -110,6 +125,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</div>
 			</div>
 		</div>
-	</div><!-- 整体 -->
+	</div>
+	<!-- 整体 -->
 </body>
 </html><?php }} ?>

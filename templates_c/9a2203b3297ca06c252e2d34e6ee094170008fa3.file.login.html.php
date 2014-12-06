@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-06 14:01:03
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-06 23:50:34
          compiled from "templates/login.html" */ ?>
 <?php /*%%SmartyHeaderCode:12104570485481614ecd0864-40038846%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9a2203b3297ca06c252e2d34e6ee094170008fa3' => 
     array (
       0 => 'templates/login.html',
-      1 => 1417845593,
+      1 => 1417881009,
       2 => 'file',
     ),
   ),
@@ -32,8 +32,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php echo '<script'; ?>
  src="/js/bootstrap.min.js"><?php echo '</script'; ?>
 >
+<?php echo '<script'; ?>
+ src="/js/angular.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="/js/validation.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="/js/login.js"><?php echo '</script'; ?>
+>
 </head>
-<body ng-app="loginApp">
+<body ng-app="loginApp" class="ng-scope">
 	<div>
 	<!-- 导航栏 -->
 		<nav class="navbar header" role="navigation">
@@ -50,25 +59,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 		</nav>
 		<!-- 主体 -->
-		<div class="container-fluid">
+		<div ng-controller="loginController" class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
 					<div class="panel panel-default">
 						<div class="panel-heading">登录</div>
 						<div class="panel-body">
-							<form class="form-horizontal" role="form">
+							<form class="form-horizontal w5c-form" role="form"
+							w5c-form-validate="vm.validateOptions"
+								name="loginForm" novalidate >
 								<div class="form-group">
-									<label for="inputEmail" class="col-sm-3 control-label">邮箱</label>
+									<label for="username" class="col-sm-3 control-label">用户名或邮箱</label>
 									<div class="col-sm-6">
-										<input type="email" class="form-control" id="inputEmail"
-											placeholder="邮箱"  required>
+										<input type="text" class="form-control" name="username"
+											placeholder="用户名或邮箱"  ng-model="username" required>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputPassword" class="col-sm-3 control-label">密码</label>
 									<div class="col-sm-6">
-										<input type="password" class="form-control" id="inputPassword"
-											placeholder="密码"  required>
+										<input type="password" class="form-control" name="password"
+											placeholder="密码"  ng-model="password" required>
 									</div>
 								</div>
 								<div class="form-group">
@@ -81,7 +92,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-3 col-sm-3">
-										<button type="submit" class="btn btn-default">登录</button>
+										<button type="submit" class="btn btn-default" w5c-form-submit="vm.saveEntity()">登录</button>
 									</div>
 									<div class="col-sm-3">
 										<div class="forgot-password text-right">
