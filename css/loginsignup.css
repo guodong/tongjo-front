@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box
+}
+
+html {
+	height: 100%
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font: 14px/18px 'Open Sans', Arial, sans-serif;
+}
+
+.header{
+		background:url(/img/index/header-bg-c96b5d9.jpg);
+		border-radius:0px;		
+		margin-bottom: 60px;
+}
+.header.logo{
+	float:left;
+}
+.header .logo img{
+	width: 200px !important;
+	margin: 0 !important;
+}
