@@ -1,0 +1,5 @@
+.settings
+templates_c/*
+.DS_Store
+.buildpath
+.project
