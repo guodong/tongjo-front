@@ -1,0 +1,415 @@
+a {
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.regform .alert {
+	padding: 6px 15px;
+}
+
+.top {
+	width: 100%;
+	height: 70px;
+	background: #424242;
+	border-bottom: 1px solid #999;
+}
+
+.top .logo {
+	display: block;
+	height: 100%;
+	float: left;
+}
+
+.top .logo img {
+	height: 40px;
+	margin-top: 7px;
+}
+
+.top .topbar {
+	display: block;
+	float: right;
+}
+
+.top .topbar li {
+	display: inline-block;
+	padding-top: 15px;
+	padding-right: 20px;
+}
+
+.top .topbar a {
+	color: white;
+	display: block;
+	font-size: 15px;
+}
+
+.subnav {
+	width: 600px;
+	height: 50px;
+	background: #83c257;
+	margin: 0 auto;
+	padding-left: 20px;
+	background-size: cover;
+	background-clip: content-box;
+	box-sizing: border-box;
+	position: relative;
+	top: -25px;
+	text-indent: 10px;
+}
+
+.subnav a {
+	display: inline-block;
+	line-height: 50px;
+	height: 100%;
+	color: #fff;
+	margin-right: 20px;
+}
+
+.subnav:after {
+	content: "";
+	display: block;
+	position: absolute;
+	border: 20px solid transparent;
+	border-bottom: 20px solid #424242;
+	top: -25px;
+	right: -25px;
+	box-shadow: 0px 7px 6px -9px black;
+	transform: rotate(45deg);
+}
+
+.wrapper {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.bottom {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background: #424242;
+	width: 100%;
+	padding-top: 40px;
+}
+.bottom .text p{
+	text-align: center;
+	color: #fff;
+}
+
+.subbottom {
+	width: 800px;
+	height: 80px;
+	background: #83c257;
+	margin: 0 auto;
+	padding-left: 20px;
+	background-size: cover;
+	background-clip: content-box;
+	box-sizing: border-box;
+	position: absolute;
+	top: -50px;
+	left: 300px;
+}
+
+.subbottom:after {
+	content: "";
+	display: block;
+	position: absolute;
+	border: 20px solid transparent;
+	border-bottom: 20px solid #424242;
+	bottom: -25px;
+	right: -25px;
+	box-shadow: 0px 7px 6px -9px black;
+	transform: rotate(135deg);
+}
+.subbottom p{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+.subbottom p.sm{
+	font-size: 16px;
+}
+
+.main {
+	min-height: 600px;
+}
+
+.header {
+	background: #D4AAD3;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	padding: 138px 0 0;
+	text-align: center;
+	min-height: 400px;
+	position: relative
+}
+
+.logotxt {
+	margin-bottom: 30px;
+	border: 0
+}
+
+.logotxt a {
+	font-weight: 700;
+	color: #fff;
+	font-size: 64px
+}
+
+.header h2 {
+	color: #fff;
+	padding: 0;
+	margin: 0 0 45px;
+	font-weight: 100;
+	font-size: 34px
+}
+
+.userinfobox {
+	margin-top: 50px;
+	border: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+#userinfo {
+	margin-top: -20px;
+	margin-left: 0px;
+	align: center;
+	color: #222;
+}
+
+.rightbelow {
+	font-size: 9px;
+	float: right;
+	margin-top: 80px;
+	margin-right: 10px;
+}
+
+.loginformbox {
+	max-width: 300px;
+	display: block;
+}
+
+.loginformtitle {
+	padding-top: 10px;
+}
+
+.title {
+	width: 100%;
+	font-size: 14px;
+	padding-top: 6px;
+	text-align: right;
+	margin: 16px 0;
+	font-family: Microsoft YaHei;
+}
+
+.stepbox {
+	height: 30px;
+	margin-top: 3px;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+.steptext {
+	font-family: Microsoft YaHei;
+	font-color: orange;
+	font-size: 22px;
+}
+
+.bookdetalitext {
+	margin-left: 40px;
+	font-family:;
+	font-size: 12px;
+}
+
+.userinfoedit {
+	padding-top: 20px;
+}
+
+#userinfoform .control-label {
+	width: 300px;
+	font-size: 14px;
+	padding-top: 6px;
+	margin: 16px 0;
+	font-family: Microsoft YaHei;
+	border: 0;
+}
+
+#userinfoform .form-control {
+	font-size: 14px;
+	margin: 16px 0;
+}
+
+.mybookbox {
+	margin-top: 30px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.bookinbox {
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 10px;
+	margin: 0px;
+}
+
+.bookinbox2 {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: -1px 0px;
+}
+
+.flagsold {
+	margin-top: 30px;
+	min-width: 100px;
+}
+
+.booktitle {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.price {
+	font-family: "arial";
+	line-height: 30px;
+	width: 720px;
+}
+
+.search_now_price {
+	font-family: arial, 'Hiragino Sans GB', "Simsun";
+	color: #FA5000;
+	font-size: 14px;
+	overflow: hidden;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.search_pre_price {
+	color: #969696;
+	text-decoration: line-through;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: arial, 'Hiragino Sans GB', "Simsun";
+}
+
+.search_discount {
+	color: #969696;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: arial, 'Hiragino Sans GB', "Simsun";
+}
+
+#lastlable {
+	margin-bottom: 80px;
+}
+
+#button {
+	margin-top: 80px;
+	text-align: center;
+}
+
+#ibutton {
+	text-align: center;
+}
+
+#middle {
+	margin-top: 50px;
+}
+
+#tab {
+	list-style: none;
+}
+
+#sold {
+	float: left;
+	margin-right: 20px;
+}
+
+/*sb*/
+.sb-container {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+/*bb*/
+.pic {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 5px;
+}
+
+.booklistbox {
+	margin: -10px -10px 20px -10px;
+}
+
+table.bookinfo {
+	margin-left: 0px;
+}
+
+.bookinfo tr td {
+	font-size: 10px;
+	text-align: left;
+	padding: 3px;
+}
+
+.bookinfo tr td.price {
+	font-size: 13px;
+	color: red;
+	text-align: right;
+}
+
+.media-heading {
+	font-size: 12px;
+}
+
+.bookinfo tr td.title {
+	text-align: right;
+}
+
+.booktitile {
+	font-size: 14px;
+	margin: 3px;
+	color: #CC9909;
+}
+
+.collect {
+	color: orange;
+}
+
+.dropsellerinfo {
+	float: right;
+}
+
+.sellerinfo p {
+	font-size: 9px;
+	margin-bottom: -3px;
+	margin-right: 5px;
+}
+
+.modal-title {
+	color: #f0ad4e;
+}
+
+.modal-body h4 {
+	color: #428bca;
+}
+
+.dpd {
+	position: absolute;
+	z-index: 1;
+	width: 100px;
+	right: 0;
+	background: #428bca;
+}
+
+.dpd a {
+	display: block;
+	width: 100%;
+}
+
+.init {
+	margin-top: 100px;
+}

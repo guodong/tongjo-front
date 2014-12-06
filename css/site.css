@@ -460,7 +460,7 @@ main>section>div {
 
 .header header nav a {
 	float: left;
-	margin: 0 0 0 30px;
+	margin: 0 0 0 10px;
 	font: 400 16px 'Source Sans Pro', sans-serif;
 	color: #fff
 }
@@ -469,20 +469,21 @@ main>section>div {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.9)
 }
 
-.header header nav a.signup {
+.header header nav a.signup{
+	
 	height: 25px;
-	padding: 0 20px;
-	border-radius: 20px;
-	background: #fa6f57;
-	text-transform: uppercase;
+	padding: 0 20px;	
 	font-size: 16px;
 	font-weight: 700;
-	line-height: 23px;
-	text-align: center
+	line-height: 23px;	
 }
 
 .header header nav a.signup:hover {
-	border-bottom: 0
+	border-bottom: 0;
+	border-radius: 20px;
+	background: #fa6f57;
+	text-transform: uppercase;
+	text-align: center	
 }
 
 .header header .open-nav {
@@ -824,9 +825,8 @@ main>section>div {
 
 .home>section.tech article {
 	float: left;
-	width: 20%;
-	margin: 0 0 0 5%;
-	padding: 0 20px
+	width: 23%;
+	margin: 0 0 0 2%;
 }
 .home>section.tech article h3{
 	line-height: 2em;
@@ -847,8 +847,8 @@ main>section>div {
 	color: #fff;
 }
 .home>section.tech article span div p{
-	line-height: 1.5em;
-	margin-top: 10px;
+	line-height: 2em;
+	margin-top: 20px;
 }
 
 
