@@ -17,7 +17,7 @@ body {
 }
 
 .header{
-		background:url(/img/index/header-bg-c96b5d9.jpg);
+		background:#424242;
 		border-radius:0px;		
 		margin-bottom: 60px;
 }
@@ -29,6 +29,45 @@ body {
 	margin: 0 !important;
 }
 
+.fullscreen_post_bg {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-size: cover;
+background-position: 50% 50%;
+z-index:-1;
+}
+.loginsignupbox{
+	width:300px;
+	padding: 30px;
+}
+.div-logo-mid {
+	padding-left: 10px;
+	padding-right:10px;
+}
+.logo-mid {
+height:150px;
+margin-bottom: 8px;
+background: url(/img/logo_denglu.png) no-repeat scroll center 0px transparent;
+background-size:100% 100%;
+}
+.boxcenter{
+	text-align: center;
+}
+a {
+color: #FFFFFF;
+}
+.boxtext{
+	color:#f8f8f8;
+}
+.signuptext a {
+color: #FFFFFF;
+}
+.signuptext{
+	color:#f8f8f8;
+}
 .w5c-form input:focus:invalid:focus,
 .w5c-form textarea:focus:invalid:focus,
 .w5c-form select:focus:invalid:focus {

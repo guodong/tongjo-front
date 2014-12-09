@@ -47,7 +47,11 @@ angular.module("w5c.validator", ["ng"])
                 var $group = $elem.parent().parent();
                 if (!this.isEmpty($group) && $group.hasClass("has-error")) {
                     $group.removeClass("has-error");
-                    $elem.next(".w5c-error").remove();
+                    if($elem.attr("type") != "checkbox")
+                    	$elem.next(".w5c-error").remove();
+                    else {
+                    	$elem.parent().next(".w5c-error").remove();
+                    }
                 }
             };
             this.options = {

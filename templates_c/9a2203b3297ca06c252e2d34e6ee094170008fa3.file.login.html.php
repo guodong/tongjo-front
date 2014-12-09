@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-06 23:50:34
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-09 22:06:28
          compiled from "templates/login.html" */ ?>
 <?php /*%%SmartyHeaderCode:12104570485481614ecd0864-40038846%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9a2203b3297ca06c252e2d34e6ee094170008fa3' => 
     array (
       0 => 'templates/login.html',
-      1 => 1417881009,
+      1 => 1418122971,
       2 => 'file',
     ),
   ),
@@ -42,9 +42,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  src="/js/login.js"><?php echo '</script'; ?>
 >
 </head>
-<body ng-app="loginApp" class="ng-scope">
+<body ng-app="loginApp">
 	<div>
 	<!-- 导航栏 -->
+	   <!--  
 		<nav class="navbar header" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -58,53 +59,55 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</div>
 			</div>
 		</nav>
-		<!-- 主体 -->
-		<div ng-controller="loginController" class="container-fluid">
+		-->
+		<div class="fullscreen_post_bg" style="background-image: url('/img/denglu.jpg');">
+        </div>
+		<!-- 主体 -->		
+		<div ng-controller="loginController" class="container-fluid loginsignupbox">
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-					<div class="panel panel-default">
-						<div class="panel-heading">登录</div>
-						<div class="panel-body">
+			<div class="div-logo-mid">
+			<a href="/index">
+                <h3 class="logo-mid">
+                </h3>
+            </a>
+            </div>
+				<div class="col-sm-12">
 							<form class="form-horizontal w5c-form" role="form"
 							w5c-form-validate="vm.validateOptions"
 								name="loginForm" novalidate >
 								<div class="form-group">
-									<label for="username" class="col-sm-3 control-label">用户名或邮箱</label>
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<input type="text" class="form-control" name="username"
-											placeholder="用户名或邮箱"  ng-model="username" required>
+											placeholder="请输入用户名或邮箱"  ng-model="username" required>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputPassword" class="col-sm-3 control-label">密码</label>
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<input type="password" class="form-control" name="password"
-											placeholder="密码"  ng-model="password" required>
+											placeholder="请输入密码"  ng-model="password" required>
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-6">
-										<div class="checkbox">
+									<div class="col-sm-12 boxcenter">
+										<div class="checkbox boxtext">
 											<label> <input type="checkbox"> 记住我
 											</label>
 										</div>
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-3">
-										<button type="submit" class="btn btn-default" w5c-form-submit="vm.saveEntity()">登录</button>
-									</div>
-									<div class="col-sm-3">
-										<div class="forgot-password text-right">
-											<a href="/password/remind">忘记密码？</a>
-										</div>
+									<div class="col-sm-12">
+										<button type="submit" class="btn btn-primary col-sm-12" w5c-form-submit="vm.saveEntity()">登录</button>
 									</div>
 								</div>
 							</form>
-						</div>
-					</div>
 				</div>
+		    <div>
+            <div class="col-sm-5 col-sm-offset-1"><a  class = "logina" href="">找回密码</a></div>
+            <div class="col-sm-5 col-sm-offset-1"><a  class = "logina" href="/signup">快速注册</a></div>
+            </div>
 			</div>
+          
 		</div>
 	</div><!-- 整体 -->
 </body>

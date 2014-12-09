@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-07 00:15:01
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-09 22:06:35
          compiled from "templates/signup.html" */ ?>
 <?php /*%%SmartyHeaderCode:171523391554829bcc10a837-19282366%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9ed991be824c362b16b427f56aa9924ea4656498' => 
     array (
       0 => 'templates/signup.html',
-      1 => 1417882498,
+      1 => 1418122957,
       2 => 'file',
     ),
   ),
@@ -42,10 +42,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  src="/js/signup.js"><?php echo '</script'; ?>
 >
 </head>
-<body ng-app="signupApp" class="ng-scope">
+<body ng-app="signupApp">
 	<div>
 		<!-- 导航栏 -->
-		<nav class="navbar header" role="navigation">
+		<!--  <nav class="navbar header" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a href="/" class="logo"><img alt="" src="/img/LOGO3.png"></a>
@@ -58,70 +58,72 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</div>
 			</div>
 		</nav>
+		-->
+		<div class="fullscreen_post_bg" style="background-image: url('/img/zhuce.jpg');">
+        </div>
 		<!-- 主体 -->
-		<div ng-controller="signupController" class="container-fluid">
+		
+		<div ng-controller="signupController" class="container-fluid loginsignupbox">
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-					<div class="panel panel-default">
-						<div class="panel-heading">立即免费注册</div>
-						<div class="panel-body">
+			<div class="div-logo-mid">
+			<a href="/index">
+                <h3 class="logo-mid">
+                </h3>
+            </a>
+            </div>
+				<div class="col-sm-12">
 							<form class="form-horizontal w5c-form"
 								role="form" w5c-form-validate="vm.validateOptions"
 								name="signupForm" novalidate>
 								<div class="form-group">
-									<label for="inputEmail" class="col-sm-3 control-label">邮箱</label>
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<input type="email" id="email" name="email"
 											class="form-control"
-											placeholder="邮箱" ng-model="email" required>
+											placeholder="请输入邮箱" ng-model="email" required>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputUsername" class="col-sm-3 control-label">用户名</label>
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 									<!-- w5c-unique-check="{url:''+username}" -->
 										<input type="text" id="name" name="username"
 											class="form-control"
-											placeholder="用户名" ng-model="username"
+											placeholder="请输入用户名" ng-model="username"
 											ng-pattern="/^[A-Za-z]{1}[0-9A-Za-z_]{1,19}$/"
 											 required>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputPassword" class="col-sm-3 control-label">密码</label>
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<input type="password" name="password"
 											class="form-control"
-											placeholder="密码" ng-minlength="5" ng-maxlength="15"
+											placeholder="请输入密码" ng-minlength="5" ng-maxlength="15"
 											ng-model="password" required>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputPassword" class="col-sm-3 control-label">重复密码</label>
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<input type="password" name="repeatpassword" w5c-repeat="password"
 											class="form-control"
-											placeholder="重复密码" ng-model="repeatpassword"
+											placeholder="请确定密码" ng-model="repeatpassword"
 											required>
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-6">
-										<div class="checkbox">
+									<div class="col-sm-12">
+										<div class="checkbox col-sm-12 boxcenter signuptext">
 											<label> <input type="checkbox" name="agree" ng-model="agree" required> 我同意<a>用户协议</a>
 											</label>
 										</div>
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-3">
-										<button type="submit" class="btn btn-default"
+									<div class="col-sm-12">
+										<button type="submit" class="btn btn-primary col-sm-12"
 											w5c-form-submit="vm.saveEntity()">注册</button>
 									</div>
 								</div>
 							</form>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>
